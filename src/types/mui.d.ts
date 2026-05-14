@@ -7,5 +7,19 @@ declare module "@mui/material/Button" {
     interface ButtonPropsVariantOverrides {
         dashed: true;
     }
+
+    // in order to use custom color
+    interface ButtonPropsVariantOverrides {
+        custom: true;
+    }
 }
 
+declare module "@mui/material/styles" {
+    interface Palette {
+        custom: Palette["primary"];
+    }
+
+    interface PaletteOptions {
+        custom?: PaletteOptions["primary"];
+    }
+}
