@@ -10,20 +10,18 @@ function Intro() {
 
   // MUI Spacing is 8px by default
   return ( 
-    <Container maxWidth="xs">
-      <Stack gap={2}>
+    <Container maxWidth="xs">{/*Centers everything horizontally*/}
+      <Stack>{/* stack stacks things vertically, gap is in increments of 8px*/}
         <CssBaseline />
-        <Button startIcon={<AutoAwesomeRoundedIcon />} variant="contained">
-          Submit
-        </Button>
+        <Button startIcon={<AutoAwesomeRoundedIcon />} variant="contained">Hello World</Button>
         <TextField value={value} onChange={(e) => {
           setValue(e.target.value);
           }} 
           error={!value}
         />
         <Slider />
-        <AutoAwesomeRoundedIcon fontSize="small" color="error"/>
       </Stack>
+      <AutoAwesomeRoundedIcon fontSize="small" color="error"/>
     </Container>
   );
 }
