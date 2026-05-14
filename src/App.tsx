@@ -8,7 +8,6 @@ function App() {
 
   const [value, setValue] = useState("");
 
-  // MUI Spacing is 8px by default
   return ( 
     <>
       <Container maxWidth="xs">{/*Centers everything horizontally*/}
