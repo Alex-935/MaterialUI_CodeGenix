@@ -13,15 +13,15 @@ function App() {
     <>
       <Container maxWidth="xs">{/*Centers everything horizontally*/}
         <Stack gap={2}>{/* stack stacks things vertically, gap is in increments of 8px*/}
-        <CssBaseline />
+          <CssBaseline />
           <Button startIcon={<AutoAwesomeRoundedIcon />} variant="contained">Hello World</Button>
-        <TextField value={value} onChange={(e) => {
-          setValue(e.target.value);
-          }} 
-          error={!value}
-        />
-        <Slider />
-      </Stack>
+          <TextField value={value} onChange={(e) => {
+            setValue(e.target.value);
+            }} 
+            error={!value}
+          />
+          <Slider />
+        </Stack>
         <AutoAwesomeRoundedIcon fontSize="small" color="error"/>
       </Container>
       
@@ -40,7 +40,7 @@ function App() {
             "&.Mui-disabled .MuiSlider-rail": {backgroundColor: "error.main"},
           }}/>
         </Stack>
-    </Container>
+      </Container>
     </>
   );
 }
